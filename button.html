@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Button</title>
+    <style>
+        .button {
+            padding: 10px 40px;
+            background-color: orangered;
+            color: white;
+            border: none;
+            font-size: 40px;
+            font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+            border-radius: 8px;
+            animation: hello 2s ease infinite;
+            position: relative;
+            animation-direction: alternate;
+        }
+
+        @keyframes hello {
+            0% {left: 0px;top: 0px;}
+            100% {left: 1150px;top: 0px;}
+        }
+    </style>
+</head>
+
+<body>
+    <button class="button">Button</button>
+
+
+</body>
+
+</html>

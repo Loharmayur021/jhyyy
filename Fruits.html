@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fruits</title>
+    <style>
+        * {
+            background-color: rgb(83, 233, 155);
+        }
+
+        h1 {
+            color: blueviolet;
+            font-size: 50px;
+            text-align: center;
+        }
+
+        p {
+            font-size: 30px;
+            color: brown;
+            padding: 0 100px;
+
+        }
+
+        .desc {
+            width: 100%;
+        }
+
+        #image {
+            width: 300px;
+            margin: 0 520px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <input type="checkbox" name="Orange" id="checkbox1">
+        <label for="Orange">Orange</label>
+        <input type="checkbox" name="Apple" id="checkbox2">
+        <label for="Apple">Apple</label>
+        <input type="checkbox" name="Banana" id="checkbox3">
+        <label for="Banana">Banana</label>
+
+    </div>
+
+    <div class="desc">
+        <img src="" alt="" id="image">
+        <h1 id="heading"></h1>
+        <p id="para"></p>
+    </div>
+
+    <script>
+        let heading = document.getElementById('heading');
+        let image = document.getElementById('image');
+        let paragraph = document.getElementById('para');
+
+        checkbox1.addEventListener("click", function () {
+            image.src = "orange.jpg";
+            image.addEventListener("mouseover", function () {
+                heading.textContent = "Orange";
+                paragraph.textContent = `A orange is an elongated, edible fruit - botanically a berry[1][2] - produced by several kinds of large herbaceous flowering plants in the genus Musa.[3] In some countries, bananas used for cooking may be called "plantains", distinguishing them from dessert bananas`;
+            })
+        });
+        checkbox2.addEventListener("click", function () {
+            image.src = "apple.webp";
+            image.addEventListener("mouseover", function () {
+                heading.textContent = "Apple";
+                paragraph.textContent = `An apple is an edible fruit produced by an apple tree (Malus domestica). Apple trees are cultivated worldwide and are the most widely grown species in the genus Malus.`;
+            })
+        });
+        checkbox3.addEventListener("click", function () {
+            image.src = "banana.webp"
+            image.addEventListener("mouseover", function () {
+                heading.textContent = "Banana";
+                paragraph.textContent = `A banana is an elongated, edible fruit - botanically a berry[1][2] - produced by several kinds of large herbaceous flowering plants in the genus Musa.[3] In some countries, bananas used for cooking may be called "plantains", distinguishing them from dessert bananas`;
+            })
+        });
+
+    </script>
+
+
+
+
+</body>
+
+</html>

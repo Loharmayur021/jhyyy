@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pluse</title>
+    <style>
+        .main{
+            width: 100%;
+            margin: 250px 500px;
+            display: flex;
+        }
+        .dot {
+            width: 60px;
+            height: 60px;
+            border-radius: 50%;
+            background-color: red;
+            animation: ani 1s ease infinite;
+            animation-delay: 1s;
+        }
+        
+
+        @keyframes ani {
+            0% {
+                box-shadow: 0 0 0 0px rgba(0, 0, 0, .5);
+            }
+            100% {
+                box-shadow: 0 0 0 25px rgba(0, 0, 0, 0);
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div class="main">
+        <div class="dot"></div>&emsp;&emsp;&emsp;
+        <div class="dot"></div>&emsp;&emsp;&emsp;
+        <div class="dot"></div>
+    </div>
+</body>
+
+</html>
